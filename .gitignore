@@ -1,2 +1,5 @@
 # Exclude emacs temp files
 *~
+*tar.gz
+/testprog/*
+!/testprog/CMakeLists.txt

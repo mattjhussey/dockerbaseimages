@@ -1,9 +1,9 @@
 FROM centos:centos7.9.2009
 
-RUN yum clean all
-RUN yum update -y
-RUN yum -y --enablerepo extras install epel-release
-RUN yum -y install cmake3
-RUN yum -y install gcc
+RUN \
+    yum -y --enablerepo extras install epel-release && \
+    yum update -y && \
+    yum clean all && \
+    yum -y install cmake3 gcc-c++ make
 
 CMD ["/bin/bash"]

@@ -1,8 +1,8 @@
 FROM ubuntu:20.04
 
-RUN apt update -y
-RUN apt install -y cmake
-RUN apt install -y build-essential
-RUN apt install -y clang-tidy
+RUN \
+    export DEBIAN_FRONTEND=noninteractive && \
+    apt update -y && \
+    apt install -y cmake build-essential clang-tidy
 
 CMD ["bash"]
