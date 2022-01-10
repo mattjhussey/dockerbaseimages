@@ -4,6 +4,6 @@ RUN \
     yum -y --enablerepo extras install epel-release && \
     yum update -y && \
     yum clean all && \
-    yum -y install cmake3 gcc-c++ make libuuid
+    yum -y install cmake3 gcc-c++ make libuuid-devel
 
 CMD ["/bin/bash"]
