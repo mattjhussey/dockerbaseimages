@@ -7,7 +7,7 @@ RUN \
     yum -y install cmake3 gcc-c++ make libuuid-devel ninja-build mercurial python3
 	
 RUN \
-	pip3 install requests
+	pip3 install requests wheel
 
 
 CMD ["/bin/bash"]
