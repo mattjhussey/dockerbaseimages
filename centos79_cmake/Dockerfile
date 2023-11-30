@@ -4,7 +4,7 @@ RUN \
     yum -y --enablerepo extras install epel-release && \
     yum update -y && \
     yum clean all && \
-    yum -y install cmake3 gcc-c++ make libuuid-devel ninja-build mercurial python3 openssl-devel file patchelf python3-devel
+    yum -y install cmake3 gcc-c++ make libuuid-devel ninja-build mercurial python3 openssl-devel file patchelf python3-devel git
 	
 RUN \
 	pip3 install requests wheel scikit-build pybind11 dataclasses
